@@ -46,14 +46,9 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 			</div>
 		</div>
-<div class="col-1">
-        <h3>Child's Information</h3>
-<?php
-// Idea #1 - Embedded Gravity Form
-//              Unfortunately, this idea didn't work because the form's "Submit" actions conflict with
-//              woocommerce "submit" actions.
-//    echo do_shortcode('[gravityform id="7" title="false" description="false"]');
-?>
+        <div class="col-1" style="background: #00ff0a69;">
+            <h3>Child's Information</h3>
+
 </div>
 
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
